@@ -22,16 +22,16 @@ function renderHTML(parent, childArray) {
 parent.innerHTML = "";
   for (let i = 0; i < childArray.length; i++) {
     let element = childArray[i];
-    let childElement = createHTML(element)
+    let childElement = createHTML(element);
     parent.appendChild(childElement);
     }
 }
 
 function createHTML(member) {
     let element = document.createElement("li");
-    element.classList.add("list-group-item")
+    element.classList.add("list-group-item");
   
-    element.innerHTML =`<p>${member}</p>`
+    element.innerHTML =`<p>${member}</p>`;
 
    return element
   }
@@ -55,5 +55,6 @@ function createHTML(member) {
      for (let i = 0; i < array.length; i++){
         array.pop;
      }
-     return array; 
   }
+
+  console.log("ciao")
